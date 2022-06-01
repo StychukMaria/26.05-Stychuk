@@ -1,0 +1,45 @@
+.container{
+	display: grid;
+	padding: 8px;
+	grid-template-areas:
+		'header header header header'
+		'aside main main main'
+		'footer footer footer footer';
+	grid-gap: 5px;
+}
+
+header{
+	grid-area: header;
+	background-color: orange;
+	height: 120px;
+}
+aside{
+	grid-area: aside;
+	background-color: blue;
+	height: 500px;
+}
+main{
+	grid-area: main;
+	background-color: yellow;
+	height: 500px;
+	position: relative;
+}
+footer{
+	grid-area: footer;
+	background-color: green;
+	height: 120px;
+}
+hgroup{
+	bottom: 330px;
+	background-color: orange;
+}
+nav{
+	bottom: 230px;
+	background-color: red;
+}
+hgroup, nav{
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	right: 700px;
+}
